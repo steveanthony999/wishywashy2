@@ -1,3 +1,8 @@
+const closePopUpButton = document.getElementById('close-pop-up');
+const cta = document.querySelector('.cta');
+const nav = document.getElementById('nav-icon');
+const smallCtaBtn = document.getElementById('small-cta-btn');
+
 gsap.to('.cta', {
   scrollTrigger: {
     trigger: '.cta',
@@ -11,45 +16,84 @@ gsap.to('.cta', {
 });
 
 function showClosePopUp() {
-  const closePopUpButton = document.getElementById('close-pop-up');
   closePopUpButton.style.display = 'block';
   closePopUpButton.style.opacity = 0;
-  show();
 
-  function show() {
-    gsap.to('#close-pop-up', {
-      duration: 1.2,
-      opacity: 1,
-    });
-  }
+  gsap.to('#close-pop-up', {
+    duration: 0.2,
+    opacity: 1,
+  });
+}
 
-  closePopUpButton.addEventListener('click', () => {
+closePopUpButton.addEventListener('click', () => {
+  gsap.to('.cta-head', {
+    duration: 0.2,
+    opacity: 0,
+  });
+
+  gsap.to('.cta-body', {
+    duration: 0.2,
+    opacity: 0,
+  });
+
+  gsap.to('.cta-footer', {
+    duration: 0.2,
+    opacity: 0,
+  });
+
+  gsap.to('.cta', {
+    duration: 1.2,
+    borderRadius: '50%',
+    height: '80px',
+    width: '80px',
+    left: '1rem',
+    top: '95%',
+    ease: 'elastic',
+    onComplete: openPopUp,
+  });
+
+  gsap.to('#small-cta-btn', {
+    duration: 0.2,
+    scale: 1,
+    opacity: 1,
+    display: 'flex',
+  });
+
+  closePopUpButton.style.display = 'none';
+});
+
+function openPopUp() {
+  smallCtaBtn.addEventListener('click', () => {
+    console.log('hi');
+
     gsap.to('.cta-head', {
       duration: 0.2,
-      scale: 0.1,
-      opacity: 0,
+      opacity: 1,
     });
-
     gsap.to('.cta-body', {
       duration: 0.2,
-      scale: 0.1,
-      opacity: 0,
+      opacity: 1,
     });
-
     gsap.to('.cta-footer', {
       duration: 0.2,
-      scale: 0.1,
-      opacity: 0,
+      opacity: 1,
     });
-
     gsap.to('.cta', {
       duration: 1.2,
       borderRadius: '50%',
-      height: '80px',
-      width: '80px',
-      left: '1rem',
-      top: '95%',
+      width: '90vw',
+      height: '80vh',
+      top: '82%',
+      borderRadius: '35px',
       ease: 'elastic',
+      onComplete: showClosePopUp,
+    });
+
+    gsap.to('#small-cta-btn', {
+      duration: 0.2,
+      scale: 0,
+      opacity: 0,
+      display: 'none',
     });
   });
 }
@@ -57,7 +101,7 @@ function showClosePopUp() {
 // NAV
 // NAV
 // NAV
-document.getElementById('nav-icon').addEventListener('click', () => {
+nav.addEventListener('click', () => {
   const navIcon = document.getElementById('nav-icon');
   navIcon.classList.toggle('open');
 });

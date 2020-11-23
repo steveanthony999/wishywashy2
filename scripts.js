@@ -1,7 +1,17 @@
 const closePopUpButton = document.getElementById('close-pop-up');
-const cta = document.querySelector('.cta');
 const nav = document.getElementById('nav-icon');
 const smallCtaBtn = document.getElementById('small-cta-btn');
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray('.panel').forEach((panel, i) => {
+  ScrollTrigger.create({
+    trigger: panel,
+    start: 'top top',
+    pinSpacing: false,
+    pin: true,
+  });
+});
 
 gsap.to('.cta', {
   scrollTrigger: {
@@ -44,9 +54,13 @@ closePopUpButton.addEventListener('click', () => {
   gsap.to('.cta', {
     duration: 1.2,
     borderRadius: '50%',
-    height: '80px',
-    width: '80px',
-    xPercent: -150,
+    // height: '80px',
+    // width: '80px',
+    height: '50px',
+    width: '50px',
+    //
+    // xPercent: -150,
+    xPercent: -250,
     justifyContent: 'flex-start',
     top: '95%',
     ease: 'elastic',

@@ -195,7 +195,8 @@ h2 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 4rem !important;
+  /* margin-right: 4rem; */
+  margin: 0 4rem 0 0;
   position: fixed;
   z-index: 2;
 }

@@ -156,6 +156,16 @@ h2 {
   font-size: 3rem;
 }
 
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  line-height: 5rem;
+}
+
+.copy-text-container {
+  width: 70vw;
+}
+
 /* LANDING PAGE */
 /* LANDING PAGE */
 /* LANDING PAGE */
@@ -197,11 +207,8 @@ h2 {
   height: 100px;
   z-index: 1;
   display: flex;
-  /* justify-content: flex-end; */
   justify-content: space-evenly;
   align-items: center;
-  /* margin-right: 4rem; */
-  /* margin: 0 4rem 0 0; */
   position: fixed;
   z-index: 2;
 }
@@ -310,11 +317,11 @@ h2 {
 }
 
 .hero-section .hero-text h1 {
-  font-family: 'Pacifico', cursive;
   font-size: 1.6rem;
   color: var(--text-color-light);
-  line-height: 3rem;
+  line-height: 2rem;
   text-shadow: var(--text-shadow);
+  text-align: center;
 }
 
 .cta {
@@ -322,7 +329,8 @@ h2 {
   width: 90vw;
   height: 80vh;
   position: fixed;
-  top: 82%;
+  /* top: 82%; */
+  top: 85%;
   border-radius: 35px;
   display: flex;
   flex-direction: column;
@@ -415,11 +423,10 @@ h2 {
 #copy-2 {
   width: 100vw;
   height: 100vh;
-  background: blue;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
 }
 
 /*========================= SERVICES SECTION =========================*/
@@ -439,11 +446,10 @@ h2 {
 #copy-3 {
   width: 100vw;
   height: 100vh;
-  background: violet;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
 }
 
 /*========================= TESTIMONIALS SECTION =========================*/
@@ -451,11 +457,11 @@ h2 {
 #testimonials {
   width: 100vw;
   height: 100vh;
-  background: white;
+  background: violet;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: white;
 }
 
 /*========================= CONTACT SECTION =========================*/

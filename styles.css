@@ -331,10 +331,12 @@ h2 {
   align-items: center;
   border-radius: 50%;
   position: absolute;
-  font-size: 3rem;
-  font-weight: 500;
   z-index: 3;
   display: none;
+}
+
+.cta #small-cta-btn img {
+  width: 70%;
 }
 
 .cta .cta-head {

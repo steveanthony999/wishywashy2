@@ -1,6 +1,9 @@
 const closePopUpButton = document.getElementById('close-pop-up');
 const nav = document.getElementById('nav-icon');
 const smallCtaBtn = document.getElementById('small-cta-btn');
+const navIcon = document.getElementById('nav-icon');
+
+var isOpen = false;
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -118,8 +121,27 @@ function openPopUp() {
 // NAV
 // NAV
 nav.addEventListener('click', () => {
-  const navIcon = document.getElementById('nav-icon');
   navIcon.classList.toggle('open');
+
+  if (isOpen === false) {
+    isOpen = true;
+
+    gsap.to('#nav-menu', {
+      duration: 0.2,
+      xPercent: -100,
+      boxShadow: '-5px 0 15px 5px rgba(0, 0, 0, 0.25)',
+      ease: 'ease',
+    });
+  } else if (isOpen === true) {
+    isOpen = false;
+
+    gsap.to('#nav-menu', {
+      duration: 0.2,
+      xPercent: 0,
+      boxShadow: 'none',
+      ease: 'ease',
+    });
+  }
 });
 // END NAV
 // END NAV

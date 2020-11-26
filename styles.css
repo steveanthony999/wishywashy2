@@ -170,6 +170,10 @@ p {
   text-align: justify;
 }
 
+a {
+  text-decoration: none;
+}
+
 .copy-text-container {
   width: 70vw;
 }
@@ -441,6 +445,18 @@ p {
   line-height: 1.6rem;
   text-shadow: var(--text-shadow);
   text-align: center;
+}
+
+.hero-section a {
+  width: 300px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-135deg, #990000, #ff0000);
+  box-shadow: 0 12px 7px -4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  color: #fff;
 }
 
 .cta {

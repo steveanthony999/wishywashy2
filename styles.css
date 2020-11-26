@@ -591,6 +591,12 @@ p {
   align-items: center;
 }
 
+#copy-2 img {
+  width: 100px;
+  position: absolute;
+  top: -42px;
+}
+
 /*========================= SERVICES SECTION =========================*/
 
 #services {

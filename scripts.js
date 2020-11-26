@@ -151,27 +151,7 @@ nav.addEventListener('click', () => {
 // FOOTPRINTS
 // FOOTPRINTS
 
-// gsap.to('.prints', {
-//   scrollTrigger: {
-//     trigger: '.prints',
-//     start: '2px 77%',
-//     toggleActions: 'play none none reset',
-//   },
-//   duration: 1.2,
-//   // yPercent: -85,
-//   opacity: 1,
-//   ease: 'elastic',
-// });
-
-// gsap.utils.toArray('.prints').forEach((prints, i) => {
-//   ScrollTrigger.create({
-//     trigger: prints,
-//     start: '-20px -50%',
-//     opacity: 1,
-//   });
-// });
-
-let prints = document.querySelectorAll('.prints');
+const prints = document.querySelectorAll('.prints');
 
 prints.forEach((print) => {
   gsap.to(print, {

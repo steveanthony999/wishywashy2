@@ -479,6 +479,65 @@ p {
   align-items: center;
 }
 
+#footprints {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+}
+
+#footprints img {
+  width: 60px;
+  transform: rotate(-200deg);
+}
+
+#footprints .print-1 {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  opacity: 0;
+}
+
+#footprints .print-2 {
+  position: absolute;
+  top: 27.5%;
+  left: 55%;
+  transform: scale(-1);
+  opacity: 0;
+}
+
+#footprints .print-3 {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  opacity: 0;
+}
+
+#footprints .print-4 {
+  position: absolute;
+  top: 52.5%;
+  left: 60%;
+  transform: scale(-1);
+  opacity: 0;
+}
+
+#footprints .print-5 {
+  position: absolute;
+  top: 65%;
+  left: 25%;
+  opacity: 0;
+}
+
+#footprints .print-6 {
+  position: absolute;
+  top: 77.5%;
+  left: 65%;
+  transform: scale(-1);
+  opacity: 0;
+}
+
 /*========================= ABOUT SECTION =========================*/
 /*========================= ABOUT SECTION =========================*/
 /*========================= ABOUT SECTION =========================*/

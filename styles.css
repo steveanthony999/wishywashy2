@@ -242,10 +242,11 @@ p {
   position: absolute;
   height: 4px;
   width: 100%;
-  background: #fff;
+  /* background: #fff; */
+  background: #0038ff;
   opacity: 1;
   left: 0;
-  box-shadow: var(--box-shadow-nav);
+  /* box-shadow: var(--box-shadow-nav); */
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -302,7 +303,7 @@ p {
   background: var(--main-color);
   position: absolute;
   top: 0;
-  right: -70vw;
+  right: -75vw;
   border-left: 1px solid #95b2fc;
   display: flex;
   flex-direction: column;
@@ -363,7 +364,7 @@ p {
 /* END NAV */
 /* END NAV */
 
-.hero-section {
+/* .hero-section {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -395,6 +396,51 @@ p {
   line-height: 2rem;
   text-shadow: var(--text-shadow);
   text-align: center;
+} */
+
+.hero-section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  margin-top: 30%;
+}
+
+.hero-section .logo-border {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(-135deg, #0038ff, #5379ff);
+  box-shadow: 0 12px 7px -4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+}
+
+/* .hero-section .logo-border .main-logo {
+  display: flex;
+  justify-content: center;
+} */
+
+.hero-section .logo-border .main-logo img {
+  width: 233px;
+}
+
+.hero-section .logo-border .hero-text {
+  width: 65%;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.hero-section .logo-border .hero-text h1 {
+  font-size: 1.25rem;
+  color: var(--text-color-light);
+  line-height: 1.6rem;
+  text-shadow: var(--text-shadow);
+  text-align: center;
 }
 
 .cta {
@@ -410,6 +456,7 @@ p {
   justify-content: space-between;
   align-items: center;
   box-shadow: var(--box-shadow-top);
+  border: 2px solid black;
   z-index: 2;
 }
 
@@ -422,7 +469,7 @@ p {
   border-radius: 50%;
   position: absolute;
   z-index: 3;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   display: none;
 }
 

@@ -128,7 +128,7 @@ nav.addEventListener('click', () => {
 
     gsap.to('#nav-menu', {
       duration: 0.2,
-      xPercent: -100,
+      xPercent: -105,
       boxShadow: '-5px 0 15px 5px rgba(0, 0, 0, 0.25)',
       ease: 'ease',
     });

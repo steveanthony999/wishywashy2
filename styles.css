@@ -453,7 +453,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(-135deg, #990000, #ff0000);
+  /* background: linear-gradient(-135deg, #990000, #ff0000); */
+  background: linear-gradient(#ff8833, #ff9900);
   box-shadow: 0 12px 7px -4px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   color: #fff;
@@ -661,15 +662,36 @@ a {
 }
 
 /*========================= SERVICES SECTION =========================*/
+/*========================= SERVICES SECTION =========================*/
+/*========================= SERVICES SECTION =========================*/
 
 #services {
   width: 100vw;
   height: 100vh;
-  background: orange;
+  background: linear-gradient(#ff8833, #ff9900);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   color: white;
+}
+
+#services .services-head {
+  width: 70%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #fff;
+}
+
+#services .services-body {
+  height: 60%;
+  display: flex;
+  align-items: center;
+}
+
+#services .services-footer {
+  height: 20%;
 }
 
 /*========================= COPY SECTION 3 =========================*/

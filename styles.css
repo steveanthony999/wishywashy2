@@ -473,9 +473,14 @@ a {
   width: 33.3%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 1.4rem;
+}
+
+.hero-section .button-container a i {
+  margin-top: 10px;
 }
 
 .hero-section .button-container a:first-child {
@@ -700,7 +705,7 @@ a {
 #services {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(#ff8833, #ff9900);
+  background: linear-gradient(#ff8833, #fff);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -717,13 +722,59 @@ a {
 }
 
 #services .services-body {
-  height: 60%;
+  height: 65%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#services .services-body .service-card {
+  height: 17%;
+  width: 80%;
+  /* background: #859ad1; */
+  border-bottom: 1px solid #444f6c;
+  /* border-left: 2px solid #444f6c; */
+  /* border-right: 2px solid #444f6c; */
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+#services .services-body .service-card:first-child {
+  /* border-top: 2px solid #444f6c; */
+  border-radius: 25px 25px 0 0;
+}
+
+#services .services-body .service-card:last-child {
+  /* border-radius: 0 0 25px 25px; */
+}
+
+#services .services-body .service-card img {
+  width: 30px;
+  filter: invert(25%);
+  margin-left: 0.5rem;
+}
+
+#services .services-body .service-card img:nth-child(2) {
+  width: 40px;
+}
+
+#services .services-body .service-card h3 {
+  font-size: 0.65rem;
+  color: #444f6c;
+}
+
+#services .services-body .service-card a i {
+  font-size: 2rem;
+  color: #444f6c;
+  margin-right: 0.5rem;
 }
 
 #services .services-footer {
-  height: 20%;
+  height: 15%;
 }
 
 /*========================= COPY SECTION 3 =========================*/

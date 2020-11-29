@@ -188,12 +188,12 @@ var mySwiper = new Swiper('.swiper-container', {
   //   },
 });
 
-gsap.to('#frog-driving', {
-  scrollTrigger: {
-    trigger: '#copy-3',
-    start: 'top top',
-    toggleActions: 'play none none none',
-  },
-  duration: 2,
-  xPercent: -200,
-});
+// gsap.to('#frog-driving', {
+//   scrollTrigger: {
+//     trigger: '#copy-3',
+//     start: 'top top',
+//     toggleActions: 'play none none none',
+//   },
+//   duration: 2,
+//   xPercent: -200,
+// });

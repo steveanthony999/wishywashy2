@@ -177,13 +177,23 @@ var mySwiper = new Swiper('.swiper-container', {
   },
 
   // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+  //   navigation: {
+  //     nextEl: '.swiper-button-next',
+  //     prevEl: '.swiper-button-prev',
+  //   },
 
   // And if we need scrollbar
   //   scrollbar: {
   //     el: '.swiper-scrollbar',
   //   },
+});
+
+gsap.to('#frog-driving', {
+  scrollTrigger: {
+    trigger: '#copy-3',
+    start: 'top top',
+    toggleActions: 'play none none none',
+  },
+  duration: 2,
+  xPercent: -200,
 });

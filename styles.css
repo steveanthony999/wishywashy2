@@ -832,6 +832,13 @@ a {
   color: white;
 }
 
+#testimonials #frog-driving {
+  width: 140px;
+  position: absolute;
+  top: -64px;
+  right: -200px;
+}
+
 #testimonials .testimonials-head {
   width: 70%;
   height: 20%;
@@ -868,7 +875,6 @@ a {
   height: 60%;
   width: 80%;
   padding: 1rem;
-  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.25);
   background: linear-gradient(360deg, var(--color-darker-blue), var(--color-lighter-blue));
   border-radius: 25px;
 }

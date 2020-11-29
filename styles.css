@@ -824,11 +824,66 @@ a {
 #testimonials {
   width: 100vw;
   height: 100vh;
-  background: violet;
+  /* background: violet; */
+  background: linear-gradient(var(--color-baby-blue), var(--color-lighter-blue));
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   color: white;
+}
+
+#testimonials .testimonials-head {
+  width: 70%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #fff;
+}
+
+#testimonials .testimonials-body {
+  height: 65%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#testimonials .testimonials-body .swiper-container {
+  height: 400px;
+  width: 100%;
+}
+
+#testimonials .testimonials-body .swiper-container .swiper-wrapper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#testimonials .testimonials-body .swiper-container .swiper-wrapper .swiper-slide .testimonials-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 60%;
+  width: 80%;
+  padding: 1rem;
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(360deg, var(--color-darker-blue), var(--color-lighter-blue));
+  border-radius: 25px;
+}
+
+#testimonials .testimonials-body .swiper-container .swiper-wrapper .swiper-slide .testimonials-card h3 {
+  font-size: 1.2rem;
+}
+
+#testimonials .testimonials-body .swiper-container .swiper-wrapper .swiper-slide .testimonials-card img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+#testimonials .testimonials-footer {
+  height: 15%;
 }
 
 /*========================= CONTACT SECTION =========================*/

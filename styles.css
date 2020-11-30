@@ -898,7 +898,75 @@ a {
   height: 100vh;
   background: #333;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #fff;
 }
+
+#contact .contact-head {
+  width: 70%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #fff;
+}
+
+#contact .contact-body {
+  height: 65%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact .contact-body .social {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#contact .contact-body .social a {
+  font-size: 2rem;
+  color: #fff;
+}
+
+#contact .contact-body .form-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact .contact-footer {
+  height: 15%;
+  display: flex;
+}
+
+/* #contact .contact-footer {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .contact-footer #mc_embed_signup form #mc_embed_signup_scroll .mc-field-group {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+#mc-embedded-subscribe,
+#mce-EMAIL {
+  width: 60vw;
+  margin-top: 10px;
+}
+
+.clear {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */

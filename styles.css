@@ -770,13 +770,17 @@ a {
   justify-content: space-between;
 }
 
+#services .services-body .content {
+  width: 70%;
+  margin-top: 15px;
+  display: none;
+  position: relative;
+  top: 0;
+}
+
 #services .services-body .service-card:first-child {
   /* border-top: 2px solid #444f6c; */
   border-radius: 25px 25px 0 0;
-}
-
-#services .services-body .service-card:last-child {
-  /* border-radius: 0 0 25px 25px; */
 }
 
 #services .services-body .service-card img {

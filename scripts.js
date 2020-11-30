@@ -197,3 +197,16 @@ var mySwiper = new Swiper('.swiper-container', {
 //   duration: 2,
 //   xPercent: -200,
 // });
+
+const serviceButton = document.querySelectorAll('.service-card');
+const content = document.querySelectorAll('.content');
+
+for (let i = 0; i < serviceButton.length; i++) {
+  serviceButton[i].addEventListener('click', () => {
+    if (content[i].style.display === 'none') {
+      content[i].style.display = 'block';
+    } else {
+      content[i].style.display = 'none';
+    }
+  });
+}
